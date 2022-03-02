@@ -42,6 +42,7 @@ public class SpillWordle {
 		}
 		
 		if (!ferdig) {
+			System.out.println("Det riktige ordet var '" + spill.getFasit() + "'");
 			System.out.println("Good effort bro. Neste gang sitter den");
 		}
 		reader.close();
