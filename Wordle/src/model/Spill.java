@@ -99,12 +99,11 @@ public class Spill implements SpillADT {
 			int count = 0;
 			String fasit;
 
-			while ( (fasit = br.readLine()) != null) {
+			while ((fasit = br.readLine()) != null) {
 				if (count == randomInt) {
 					br.close();
 					return fasit;
 				}
-
 				count++;
 			}
 

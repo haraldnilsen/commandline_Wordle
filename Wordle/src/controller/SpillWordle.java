@@ -14,9 +14,9 @@ public class SpillWordle {
 		Spill spill = new Spill();
 		info();
 		Scanner reader = new Scanner(System.in);
-
+		
 		boolean ferdig = false;
-		for (int i = 1; i<=6 || ferdig; i++) {
+		for (int i = 1; i<=6 && !ferdig; i++) {
 			String input = "";
 			boolean riktigFormat = false;
 
@@ -37,9 +37,13 @@ public class SpillWordle {
 
 			if (spill.erFerdig(input)) {
 				ferdig = true;
+				System.out.println("Jævla nerd");
 			}
 		}
-
+		
+		if (!ferdig) {
+			System.out.println("Good effort bro. Neste gang sitter den");
+		}
 		reader.close();
 
 	}
